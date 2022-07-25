@@ -1,0 +1,47 @@
+.gallery{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 43px 100px 0px 100px;
+    border-radius: 25px;
+    padding: 56px 50px;
+}
+.cards{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.box{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, 
+        rgba(0, 0, 0, 0.5) 100%);
+}
+
+.cards-img{
+    position: absolute;
+    background: rgb(255, 96, 96);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.cards-text{
+    position: absolute;
+    left: 5.88%;
+    right: 5.88%;
+    top: 78.82%;
+    bottom: 5.88%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+}

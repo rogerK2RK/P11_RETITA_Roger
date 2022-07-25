@@ -1,0 +1,59 @@
+.App-header {
+  text-align: center;
+  height: 68px;
+  margin: 40px 100px 63px 100px ;
+  position: relative;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-logo {
+  width: 210.32px;
+  height: 68px;
+  position: absolute;
+  left: 0%;
+  right: 83.04%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+}
+
+.nav-header-fisrt{
+  left: 75.08%;
+  right: 13.95%;
+}
+
+.content-header-seconde{
+  left: 90.65%;
+  right: 0%;  
+}
+
+.txt-deco{
+  text-decoration: none;
+  color: #ff6060;
+  position: absolute;
+  font-family: 'Montserrat';
+  top: 25%;
+  bottom: 25%;
+}
+
+.txt-deco:hover {
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=index.css.map */
