@@ -26,6 +26,7 @@
 
 .cards-img{
     position: absolute;
+    object-fit: cover;
     background: rgb(255, 96, 96);
     border-radius: 10px;
     width: 100%;

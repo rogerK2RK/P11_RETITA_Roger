@@ -1,18 +1,30 @@
 section{
-    border-radius: 25px;
-    background-color: #ff6060;
-    height: 223px;
-    margin: 0px 100px;
-  }
+  position: relative;
+  border-radius: 25px;
+  background-color: #ff6060;
+  height: 223px;
+  margin: 0px 100px;
+}
   
-  h1{
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 142.6%;
-    color: #fff;
-    padding: 5%;
-    /* background: url(eric-muhr-P_XxsdVgtpQ-unsplash.jpg); */
-  }
+h1{
+  position: absolute;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  color: #fff;
+  /* padding: 5%; */
+  /* background: url(https://i0.wp.com/dndduet.com/wp-content/uploads/2020/02/eric-muhr-WfUxLpncYwI-unsplash-scaled.jpg); */
+  left: 25.9%;
+  top: 24.32%;
+  bottom: 69.04%;
+}
+.img-title{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}

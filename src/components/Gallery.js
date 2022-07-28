@@ -13,7 +13,7 @@ function Gallery (){
           logement => {
             return(
               <div className='cards' key={ logement.id }>
-                <img src={ logement.pictures } className='cards-img'/>
+                <img src={ logement.cover } className='cards-img'/>
                 <div className='box'></div>
                 <p className='cards-text'>
                   { logement.title}
