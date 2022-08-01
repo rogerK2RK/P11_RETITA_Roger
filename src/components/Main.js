@@ -1,5 +1,5 @@
-import SectionFirst from './SectionFirst'
-import Gallery from './Gallery'
+import SectionFirst from './SectionFirst/SectionFirst'
+import Gallery from './Gallery/Gallery'
 
 function Main() {
   

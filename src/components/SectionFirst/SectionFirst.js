@@ -1,4 +1,4 @@
-import '../styles/SectionFirst.css';
+import './SectionFirst.css';
 
 function SectionFirst() {
   
