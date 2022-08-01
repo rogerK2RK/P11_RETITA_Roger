@@ -7,10 +7,10 @@ function Banner() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo-kasa" />
         <div className='nav-header'>
-          <a className='nav-header-fisrt txt-deco' href='#'>
+          <a className='nav-header-fisrt txt-deco' href='None'>
             Accueil
           </a>
-          <a className='content-header-seconde txt-deco' href='#'>
+          <a className='content-header-seconde txt-deco' href='None'>
             A Propos
           </a>
         </div>
