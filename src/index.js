@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home';
-import FicheLogement from './pages/FicheLogement'
+import Logement from './pages/logement'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
@@ -14,8 +14,8 @@ root.render(
     <Router>
       <Banner/>
       <Routes>
-        <Route path='/'element={<Home/>} />
-        <Route path='/FicheLogement'element={<FicheLogement/>} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/logement/:id' element={<Logement/>} />
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
     </Router>

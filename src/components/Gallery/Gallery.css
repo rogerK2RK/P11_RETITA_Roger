@@ -46,3 +46,38 @@
     line-height: 142.6%;
     color: #FFFFFF;
 }
+
+@media all and (max-width:768px) {
+    .gallery{
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px;
+        border-radius: 25px;
+        padding: 0px 20px;
+    }
+    .cards{
+        position: relative;
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .box{
+        position: relative;
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+    .cards-text{
+        position: absolute;
+        left: 5.88%;
+        right: 5.88%;
+        top: 73.73%;
+        bottom: 5.88%;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+    }
+}

@@ -5,6 +5,7 @@
   position: relative;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -57,3 +58,42 @@
 }
 
 /*# sourceMappingURL=index.css.map */
+
+@media all and (max-width:768px) {
+  .App-header {
+    text-align: center;
+    height: 47px;
+    margin: 20px;
+    position: relative;
+  }
+  .App-logo {
+    width: 145px;
+    height: 47px;
+    position: absolute;
+    left: 0%;
+    right: 56.72%;
+    top: 0%;
+    bottom: 0%;
+  }
+  .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17,11%;
+  }
+  .nav-header-fisrt{
+    left: 58.21%;
+    right: 24.18%;
+  }
+  .content-header-seconde{
+    left: 78.81%;
+    right: 0%;  
+  }
+}

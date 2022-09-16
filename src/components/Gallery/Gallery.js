@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './Gallery.css';
+import { Link } from 'react-router-dom'
+
 // import logements from '../data/logements.json'
 
 async function getLogement() {
     
-  let response = await fetch('logements.json');
+  let response = await fetch('/logements.json');
   let dataLogement = await response.json();
   
   return dataLogement;
@@ -27,13 +29,13 @@ function Gallery (){
         logements.map(
           logement => {
             return(
-              <div className='cards' key={ logement.id }>
+              <Link to={`/logement/${logement.id}`} className='cards' key={ logement.id }>
                 <img src={ logement.cover } className='cards-img' alt={ logement.title }/>
                 <div className='box'></div>
                 <p className='cards-text'>
                   { logement.title}
                 </p>
-              </div>
+              </Link>
             )
           })
       }

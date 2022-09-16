@@ -28,3 +28,16 @@ h1{
   border-radius: 25px;
   object-fit: cover;
 }
+@media all and (max-width:768px) {
+  section{
+    margin: 0px 20px 20px 20px;
+    height: 111px;
+  }
+  h1{
+    font-size: 24px;
+    line-height: 100%;
+    left: 1.6%;
+    top: 14.04%;
+    bottom: 80.05%;
+  }
+}
