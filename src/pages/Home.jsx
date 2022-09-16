@@ -1,10 +1,10 @@
 import Main from '../components/Main'
 
-function Home() {
+function Home(props) {
   
   return (
     <div className="App">
-      <Main/>
+      <Main logements={props.logements}/>
     </div>
   );
 }

@@ -11,7 +11,7 @@ function Banner() {
           <Link to="/dgsgv" className='nav-header-fisrt txt-deco'>
             Accueil
           </Link>
-          <Link className='content-header-seconde txt-deco' href='None'>
+          <Link className='content-header-seconde txt-deco' to="/error">
             A Propos
           </Link>
         </div>

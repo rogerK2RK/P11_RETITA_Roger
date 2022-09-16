@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams, useNavigate} from 'react-router-dom';
+import {useParams/*, useNavigate*/} from 'react-router-dom';
 
 async function getLogement() {
     
@@ -28,8 +28,9 @@ function FicheLogement() {
     }, [])
 
     console.log(logements)
-    // let logement = logements[0]
     let selectedLogement = logements.find((logement) => logement.id === id );
+    
+    /** La même chose  **/
     // for (const logement of logements) {
     //     if(logement.id === id ){
     //         console.log(logement.pictures)

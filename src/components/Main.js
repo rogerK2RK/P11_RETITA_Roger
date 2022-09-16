@@ -1,12 +1,12 @@
 import SectionFirst from './SectionFirst/SectionFirst'
 import Gallery from './Gallery/Gallery'
 
-function Main() {
+function Main(props) {
   
   return (
       <div>
         <SectionFirst/>
-        <Gallery/>
+        <Gallery logements={props.logements}/>
       </div>
   );
 }

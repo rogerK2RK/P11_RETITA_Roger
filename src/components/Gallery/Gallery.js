@@ -4,29 +4,29 @@ import { Link } from 'react-router-dom'
 
 // import logements from '../data/logements.json'
 
-async function getLogement() {
+// async function getLogement() {
     
-  let response = await fetch('/logements.json');
-  let dataLogement = await response.json();
+//   let response = await fetch('/logements.json');
+//   let dataLogement = await response.json();
   
-  return dataLogement;
+//   return dataLogement;
  
-}
+// }
 
-function Gallery (){
+function Gallery (props){
   
-  const [logements, setLogements] = useState([])
+  // const [logements, setLogements] = useState([])
 
-  useEffect(()=>{
-    getLogement().then((data)=>{
-      setLogements(data)
-    })
-  }, [])
+  // useEffect(()=>{
+  //   getLogement().then((data)=>{
+  //     setLogements(data)
+  //   })
+  // }, [])
 
   return (
      <div className='gallery'>
       {
-        logements.map(
+        props.logements.map(
           logement => {
             return(
               <Link to={`/logement/${logement.id}`} className='cards' key={ logement.id }>
