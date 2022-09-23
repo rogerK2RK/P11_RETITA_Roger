@@ -7,14 +7,24 @@ import prev from '../../assets/prev.svg'
 
 function Slide({imgList}) {
     const [activeIdx, setActiveIdx] = useState(0)
-    if(activeIdx=== 0){
-        console.log("Hello mother fucker")
-    }
+
+    const goToNextPicture = () => {
+        setActiveIdx((activeIdx + 1) % imgList.length)
+    };
+
+    const gotToPrevPicture = () =>{
+        const nextIndex = activeIdx-1;
+        if ( nextIndex < 0 ) {
+            setActiveIdx(imgList.length-1);
+        }else {
+            setActiveIdx(nextIndex);
+        }
+    };
 
     return <div className={styles["box-slide"]}>
-        <img className={styles["image-logement"]} src={imgList[activeIdx]} alt="test" />
-        <img onClick={() => setActiveIdx(activeIdx + 1)} className={styles["bt-next"]}  src={next} alt="button next" />
-        <img onClick={() => setActiveIdx(activeIdx - 1)} className={styles["bt-prev"]} src={prev} alt="button prev" />
+        <img className={styles["image-logement"]} src={imgList[activeIdx]} alt="Pictur of logements" />
+        <img onClick={goToNextPicture} className={styles["bt-next"]}  src={next} alt="button next" />
+        <img onClick={gotToPrevPicture} className={styles["bt-prev"]} src={prev} alt="button prev" />
         <p className={styles["index"]} >{activeIdx+1}/{imgList.length}</p>
     </div>
 }
