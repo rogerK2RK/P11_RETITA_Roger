@@ -22,7 +22,6 @@ function FicheLogement() {
     const { id } = useParams()
     // const  navigate  = useNavigate()
 
-    console.log(id)
 
     useEffect(()=>{
         getLogement().then((data)=>{
@@ -35,6 +34,7 @@ function FicheLogement() {
 
     console.log(logements)
     let selectedLogement = logements.find((logement) => logement.id === id );
+
     
     /** La même chose  **/
     // for (const logement of logements) {
