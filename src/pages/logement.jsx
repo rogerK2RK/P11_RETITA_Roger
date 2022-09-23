@@ -44,6 +44,11 @@ function FicheLogement() {
     //     }
     // }
 
+    /*DropDown*/
+    const dropDown = () =>{
+        document.getElementsByClassName("box-content-col")
+    }
+
     return selectedLogement === undefined ? null : (
         <div className={styles["logement-content"]}>
             <div className={styles["box-image-logement"]}>
@@ -53,7 +58,7 @@ function FicheLogement() {
                 <div >
                     <h2 className={styles["tytle-logement"]}>{selectedLogement.title}</h2>
                     <p className={styles["localisation"]}>{selectedLogement.location}</p>
-                    <div>
+                    <div className={styles["box-tags"]}>
                         {
                             selectedLogement.tags.map((tag) => <p className={styles["tags"]}>{tag}</p>)
                         }
@@ -69,7 +74,7 @@ function FicheLogement() {
            </div>
            <div>
                 <div>
-                    <div className={styles["box-titre-col"]}>
+                    <div className={styles["box-titre-col"]} onClick={dropDown}>
                         <h3 className={styles["titre-col"]}>Description</h3>
                         <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
                     </div>
