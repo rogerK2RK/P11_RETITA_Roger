@@ -1,16 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {useParams/*, useNavigate*/} from 'react-router-dom';
 import styles from './style.module.css';
-// import picto from '../assets/Vector.png'
+import picto from '../assets/Vector.svg'
+import Slide from '../components/Slide/index.js'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-function Slide({imgList}) {
-    const [activeIdx, setActiveIdx] = useState(0)
-    return <div>
-        <img src={imgList[activeIdx]} alt="test" />
-        <button onClick={() => setActiveIdx(activeIdx + 1)}>next</button>
-    </div>
-}
+
 
 async function getLogement() {
     
@@ -52,8 +47,7 @@ function FicheLogement() {
     return selectedLogement === undefined ? null : (
         <div className={styles["logement-content"]}>
             <div className={styles["box-image-logement"]}>
-                <img className={styles["image-logement"]} src={ selectedLogement.cover } alt={ selectedLogement.title }/>
-                <Slide imgList={selectedLogement.pictures} />
+                <Slide  imgList={selectedLogement.pictures} alt={ selectedLogement.title } />
             </div>
            <div className={styles["box-content-logement"]}>
                 <div >
@@ -61,16 +55,9 @@ function FicheLogement() {
                     <p className={styles["localisation"]}>{selectedLogement.location}</p>
                     <div>
                         {
-                            // for (const tag of logement.tags) {
-                            //     return(
-                            //         <p>{tag}</p>
-                            //     )
-                            // }
                             selectedLogement.tags.map((tag) => <p className={styles["tags"]}>{tag}</p>)
-                            
                         }
                     </div>
-                    {/* <p className={styles["tags"]}>{selectedLogement.tags}</p> */}
                 </div>
                 <div >
                     <div className={styles["dsp-flx"]}>
@@ -84,8 +71,7 @@ function FicheLogement() {
                 <div>
                     <div className={styles["box-titre-col"]}>
                         <h3 className={styles["titre-col"]}>Description</h3>
-                        {/* <FontAwesomeIcon icon="fa-thin fa-angle-down" /> */}
-                        {/* <img className={styles["icone-dropdown"]} src={picto} alt="icone" /> */}
+                        <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
                     </div>
                     <div className={styles["box-content-col"]}>
                         <p>{selectedLogement.description}</p>
