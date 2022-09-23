@@ -1,5 +1,6 @@
 import logo from '../../assets/LOGO.png';
 import './Banner.css';
+import React from 'react';
 import { Link } from "react-router-dom";
 
 function Banner() {

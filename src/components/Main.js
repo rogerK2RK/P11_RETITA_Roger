@@ -1,4 +1,5 @@
 import SectionFirst from './SectionFirst/SectionFirst'
+import React from 'react';
 import Gallery from './Gallery/Gallery'
 
 function Main(props) {

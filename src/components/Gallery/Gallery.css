@@ -13,12 +13,13 @@
     height: 340px;
     border-radius: 10px;
     margin-bottom: 50px;
+    margin-right: 17px;
     flex-grow: 1;
 }
 
 .box{
     position: relative;
-    width: 340px;
+    /* width: 340px; */
     height: 340px;
     flex-grow: 1;
     border-radius: 10px;

@@ -1,5 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {useParams/*, useNavigate*/} from 'react-router-dom';
+import styles from './style.module.css';
+// import picto from '../assets/Vector.png'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+function Slide({imgList}) {
+    const [activeIdx, setActiveIdx] = useState(0)
+    return <div>
+        <img src={imgList[activeIdx]} alt="test" />
+        <button onClick={() => setActiveIdx(activeIdx + 1)}>next</button>
+    </div>
+}
 
 async function getLogement() {
     
@@ -39,22 +50,56 @@ function FicheLogement() {
     // }
 
     return selectedLogement === undefined ? null : (
-        <div>
-            <img src={ selectedLogement.cover } alt={ selectedLogement.title }/>
-            <div>
-                <p>{selectedLogement.title}</p>
-                 <p>{selectedLogement.location}</p>
-                 {/* <div>
-                    {
-                        for (const tag of logement.tags) {
-                            return(
-                                <p>{tag}</p>
-                            )
-                        }
-                    }
-                 </div> */}
-                 <p>{selectedLogement.tags}</p>
+        <div className={styles["logement-content"]}>
+            <div className={styles["box-image-logement"]}>
+                <img className={styles["image-logement"]} src={ selectedLogement.cover } alt={ selectedLogement.title }/>
+                <Slide imgList={selectedLogement.pictures} />
             </div>
+           <div className={styles["box-content-logement"]}>
+                <div >
+                    <h2 className={styles["tytle-logement"]}>{selectedLogement.title}</h2>
+                    <p className={styles["localisation"]}>{selectedLogement.location}</p>
+                    <div>
+                        {
+                            // for (const tag of logement.tags) {
+                            //     return(
+                            //         <p>{tag}</p>
+                            //     )
+                            // }
+                            selectedLogement.tags.map((tag) => <p className={styles["tags"]}>{tag}</p>)
+                            
+                        }
+                    </div>
+                    {/* <p className={styles["tags"]}>{selectedLogement.tags}</p> */}
+                </div>
+                <div >
+                    <div className={styles["dsp-flx"]}>
+                        <p className={styles["name"]}>{selectedLogement.host.name}</p>
+                        <img className={styles["portrait"]} src={selectedLogement.host.picture} alt={selectedLogement.host.name} />
+                    </div>
+                    <p className={styles["stars"]}>{selectedLogement.rating}</p>
+                </div>
+           </div>
+           <div>
+                <div>
+                    <div className={styles["box-titre-col"]}>
+                        <h3 className={styles["titre-col"]}>Description</h3>
+                        {/* <FontAwesomeIcon icon="fa-thin fa-angle-down" /> */}
+                        {/* <img className={styles["icone-dropdown"]} src={picto} alt="icone" /> */}
+                    </div>
+                    <div className={styles["box-content-col"]}>
+                        <p>{selectedLogement.description}</p>
+                    </div>
+                </div>
+                {/* <div>
+                    <div>
+                        <h3 className={styles["titre-col"]}>Équipements</h3>
+                    </div>
+                    <div>
+                        <p>{selectedLogement.equipments}</p>
+                    </div>
+                </div> */}
+           </div>
         </div>
     )
 
@@ -90,3 +135,5 @@ function FicheLogement() {
 }
 
 export default FicheLogement ;
+
+
