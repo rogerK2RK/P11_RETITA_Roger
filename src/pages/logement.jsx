@@ -88,36 +88,6 @@ function FicheLogement() {
            </div>
         </div>
     )
-
-    // return(
-    //     <div>
-    //         {
-    //              logements.map(
-    //                 logement => {if(logement.id === id ){
-    //                 return (
-    //                     <div key={ logement.id }>
-    //                         <img src={ logement.cover } alt={ logement.title }/>
-    //                         <div>
-    //                             <p>{logement.title}</p>
-    //                              <p>{logement.location}</p>
-    //                              {/* <div>
-    //                                 {
-    //                                     for (const tag of logement.tags) {
-    //                                         return(
-    //                                             <p>{tag}</p>
-    //                                         )
-    //                                     }
-    //                                 }
-    //                              </div> */}
-    //                              <p>{logement.tags}</p>
-    //                         </div>
-    //                     </div>
-    //                 )
-    //             } })
-    //         }
-    //         {/* {logement && <img src={ logement.cover } className='cards-img' alt={ logement.title }/>} */}
-    //     </div>
-    // )
 }
 
 export default FicheLogement ;
