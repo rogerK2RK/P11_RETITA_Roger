@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     margin: 43px 100px 0px 100px;
     border-radius: 25px;
-    padding: 56px 50px;
+    padding: 56px 0px 56px 50px;
 }
 .cards{
     position: relative;
@@ -13,7 +13,7 @@
     height: 340px;
     border-radius: 10px;
     margin-bottom: 50px;
-    margin-right: 17px;
+    margin-right: 50px;
     flex-grow: 1;
 }
 

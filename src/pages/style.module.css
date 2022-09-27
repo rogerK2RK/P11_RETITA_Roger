@@ -33,6 +33,9 @@
 .name{
     font-size: 18px;
     margin-right: 10px;
+    height: 52px;
+    text-align: right;
+    width: 93px;
 }
 .portrait{
     width: 64px;
