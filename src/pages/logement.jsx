@@ -3,7 +3,8 @@ import {useParams/*, useNavigate*/} from 'react-router-dom';
 import styles from './style.module.css';
 import picto from '../assets/Vector.svg'
 import Slide from '../components/Slide/index.js'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Stars from '../components/Stars/index.js'
+// import star from '../assets/Stars.svg'
 
 
 
@@ -20,6 +21,7 @@ function FicheLogement() {
 
     const [logements, setLogements] = useState([])
     const { id } = useParams()
+    
     // const  navigate  = useNavigate()
 
 
@@ -32,22 +34,35 @@ function FicheLogement() {
         })
     }, [])
 
-    console.log(logements)
     let selectedLogement = logements.find((logement) => logement.id === id );
-
     
-    /** La même chose  **/
-    // for (const logement of logements) {
-    //     if(logement.id === id ){
-    //         console.log(logement.pictures)
-    //         selectedLogement = logement;
+    // let myStars = [];
+    
+    // try {
+    //     for(let i = 0; i < selectedLogement.rating; i++){
+    //         let myImg = document.createElement('img');
+    //         myImg.src = star;
+    //         myStars.push(myImg);
     //     }
+    // } catch (error) {
+        
+    //   }
+
+    // const finalRates = [];
+
+    // for ( let star in myStars){
+    //     finalRates.push(<img src={star}/>)
     // }
 
+    // console.log('stars');
+    // console.log(myStars);
+
+
+
     /*DropDown*/
-    const dropDown = () =>{
-        document.getElementsByClassName("box-content-col")
-    }
+    // const dropDown = () =>{
+    //     document.getElementsByClassName("box-content-col")
+    // }
 
     return selectedLogement === undefined ? null : (
         <div className={styles["logement-content"]}>
@@ -60,7 +75,7 @@ function FicheLogement() {
                     <p className={styles["localisation"]}>{selectedLogement.location}</p>
                     <div className={styles["box-tags"]}>
                         {
-                            selectedLogement.tags.map((tag) => <p className={styles["tags"]}>{tag}</p>)
+                            selectedLogement.tags.map((tag) => <p key={tag.toString()} className={styles["tags"]}>{tag}</p>)
                         }
                     </div>
                 </div>
@@ -69,12 +84,14 @@ function FicheLogement() {
                         <p className={styles["name"]}>{selectedLogement.host.name}</p>
                         <img className={styles["portrait"]} src={selectedLogement.host.picture} alt={selectedLogement.host.name} />
                     </div>
-                    <p className={styles["stars"]}>{selectedLogement.rating}</p>
+                    <div id="myDiv"></div>
+                
+                    <Stars etoile={selectedLogement.rating}/>
                 </div>
            </div>
            <div>
                 <div>
-                    <div className={styles["box-titre-col"]} onClick={dropDown}>
+                    <div className={styles["box-titre-col"]}>
                         <h3 className={styles["titre-col"]}>Description</h3>
                         <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
                     </div>
