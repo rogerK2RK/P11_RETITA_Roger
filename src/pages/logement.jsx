@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {useParams/*, useNavigate*/} from 'react-router-dom';
 import styles from './style.module.css';
-import picto from '../assets/Vector.svg'
 import Slide from '../components/Slide/index.js'
 import Stars from '../components/Stars/index.js'
+import DropDescription from '../components/Description/index.js'
+
 // import star from '../assets/Stars.svg'
 
 
@@ -35,28 +36,6 @@ function FicheLogement() {
     }, [])
 
     let selectedLogement = logements.find((logement) => logement.id === id );
-    
-    // let myStars = [];
-    
-    // try {
-    //     for(let i = 0; i < selectedLogement.rating; i++){
-    //         let myImg = document.createElement('img');
-    //         myImg.src = star;
-    //         myStars.push(myImg);
-    //     }
-    // } catch (error) {
-        
-    //   }
-
-    // const finalRates = [];
-
-    // for ( let star in myStars){
-    //     finalRates.push(<img src={star}/>)
-    // }
-
-    // console.log('stars');
-    // console.log(myStars);
-
 
 
     /*DropDown*/
@@ -90,7 +69,8 @@ function FicheLogement() {
                 </div>
            </div>
            <div>
-                <div>
+                <DropDescription description={selectedLogement.description} />
+                {/* <div>
                     <div className={styles["box-titre-col"]}>
                         <h3 className={styles["titre-col"]}>Description</h3>
                         <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
@@ -98,7 +78,7 @@ function FicheLogement() {
                     <div className={styles["box-content-col"]}>
                         <p>{selectedLogement.description}</p>
                     </div>
-                </div>
+                </div> */}
                 {/* <div>
                     <div>
                         <h3 className={styles["titre-col"]}>Équipements</h3>

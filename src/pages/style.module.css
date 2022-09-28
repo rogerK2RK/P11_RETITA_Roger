@@ -50,30 +50,5 @@
     text-align: right;
 }
 
-.box-titre-col{
-    padding: 13px 20px;
-    background: #FF6060;
-    border-radius: 10px;
-    color: #fff;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-}
-.titre-col{
-    margin: 0px;
-}
-.box-content-col{
-    position: relative;
-    top: 80%;
-    background: #F7F7F7;
-    border-radius: 10px;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 12px;
-    padding-bottom: 15px;
-    z-index: 1;
-}
-.icone-dropdown{
-    height: 23px;
-    width: 14px;
-}
+
+
