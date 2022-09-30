@@ -7,9 +7,8 @@ function Foot() {
   
   return (
       <footer className={styles["foot-section"]}>
-        <img src={logo} className="App-logo" alt="logo-kasa" />
-        <div className=''>
-        </div>
+        <img src={logo} className={styles["logo"]} alt="logo-kasa" />
+        <p className={styles["text"]}> © 2020 Kasa. All rights reserved</p>
       </footer>
   );
 }

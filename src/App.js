@@ -34,7 +34,7 @@ export default function App() {
         {/* <Route path='/about' element={<About/>} /> */}
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
-      <Foot/>
+    <Foot/>
     </Router>
     
     </React.StrictMode>

@@ -1,3 +1,23 @@
 .foot-section{
     background-color: black;
+    width: 100%;
+    position: sticky;
+    height: 209px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 4%;
+    margin-top: 43px;
+}
+
+.logo{
+    width: 122px;
+    height: 39.44px;
+}
+
+.text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
 }
