@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Logement from './pages/logement'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
-import Banner from './components/Banner/Banner';
+import Banner from './components/Banner';
 import Foot from './components/Foot';
 
 async function getLogement() {

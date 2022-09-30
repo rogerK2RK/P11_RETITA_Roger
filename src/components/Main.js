@@ -1,6 +1,6 @@
-import SectionFirst from './SectionFirst/SectionFirst'
+import SectionFirst from './SectionFirst/index.js'
 import React from 'react';
-import Gallery from './Gallery/Gallery'
+import Gallery from './Gallery/index.js'
 
 function Main(props) {
   
