@@ -18,6 +18,7 @@
 }
 
 .box-content-col{
+    display: none;
     position: relative;
     top: 80%;
     background: #F7F7F7;

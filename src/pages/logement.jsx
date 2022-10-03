@@ -65,11 +65,13 @@ function FicheLogement() {
                     </div>
                     <div id="myDiv"></div>
                 
-                    <Stars etoile={selectedLogement.rating}/>
+                    <Stars etoile={Number(selectedLogement.rating)}/>
                 </div>
            </div>
            <div>
-                <DropDescription description={selectedLogement.description} />
+                <DropDescription >
+                    <p>{selectedLogement.description}</p>
+                </DropDescription>
                 {/* <div>
                     <div className={styles["box-titre-col"]}>
                         <h3 className={styles["titre-col"]}>Description</h3>
