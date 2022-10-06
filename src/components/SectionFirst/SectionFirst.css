@@ -39,5 +39,8 @@ h1{
     left: 1.6%;
     top: 14.04%;
     bottom: 80.05%;
+    width: 64%;
+    margin-left: 16px;
+    text-align: start;
   }
 }
