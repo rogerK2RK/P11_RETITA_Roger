@@ -49,6 +49,9 @@
 .stars{
     text-align: right;
 }
-
+.box-drop{
+    display: flex;
+    width: 100%;
+}
 
 

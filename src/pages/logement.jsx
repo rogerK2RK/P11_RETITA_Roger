@@ -3,7 +3,7 @@ import {useParams/*, useNavigate*/} from 'react-router-dom';
 import styles from './style.module.css';
 import Slide from '../components/Slide/index.js'
 import Stars from '../components/Stars/index.js'
-import DropDescription from '../components/Description/index.js'
+import DropInformation from '../components/Information/index.js';
 
 // import star from '../assets/Stars.svg'
 
@@ -68,10 +68,13 @@ function FicheLogement() {
                     <Stars etoile={Number(selectedLogement.rating)}/>
                 </div>
            </div>
-           <div>
-                <DropDescription >
+           <div className={styles["box-drop"]}>
+                <DropInformation >
                     <p>{selectedLogement.description}</p>
-                </DropDescription>
+                </DropInformation>
+                <DropInformation >
+                    <p>{selectedLogement.equipments}</p>
+                </DropInformation>
                 {/* <div>
                     <div className={styles["box-titre-col"]}>
                         <h3 className={styles["titre-col"]}>Description</h3>

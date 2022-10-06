@@ -2,19 +2,15 @@ import styles from "./style.module.css"
 import React, { useState } from "react"
 import picto from "../../assets/Vector.svg"
 
-function DropDescription({ children }) {
-  // const contentDescpt = document.querySelector('.box-content-col');
-  // document.getElementById("myDIV").style.display = "none";
+function DropInformation({ children }) {
   const [isOpen, setIsOpen] = useState(false)
   const dropDescpt = () => {
-    // document.querySelector('.box-content-col').style.display = "block";
     setIsOpen(!isOpen)
-    // contentDescpt.style.display = "block";
-    console.log("Hello word !")
   }
+  console.log(children)
 
   return (
-    <div>
+    <div className={styles["box-drop"]}>
       <button onClick={dropDescpt} className={styles["box-titre-col"]}>
         <h3 className={styles["titre-col"]}>Description</h3>
         <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
@@ -29,4 +25,4 @@ function DropDescription({ children }) {
   )
 }
 
-export default DropDescription
+export default DropInformation
