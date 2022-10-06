@@ -58,7 +58,7 @@ function FicheLogement() {
                         }
                     </div>
                 </div>
-                <div >
+                <div className={styles["box-pict-str"]}>
                     <div className={styles["dsp-flx"]}>
                         <p className={styles["name"]}>{selectedLogement.host.name}</p>
                         <img className={styles["portrait"]} src={selectedLogement.host.picture} alt={selectedLogement.host.name} />

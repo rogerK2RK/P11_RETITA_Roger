@@ -12,6 +12,24 @@
     justify-content: space-between;
 }
 
+@media all and (max-width:760px) {
+    .box-content-logement{
+        display: grid;
+    }
+    .logement-content{
+        margin: 0px 20px;
+    }
+    .box-pict-str{
+        display: flex;
+        align-items: center;
+    }
+    .box-drop{
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+
 .tytle-logement{
     font-size: 36px;
 }
@@ -49,9 +67,10 @@
 .stars{
     text-align: right;
 }
-.box-drop{
-    display: flex;
-    width: 100%;
+@media all and (min-width:760px) {
+    .box-drop{
+        display: flex;
+        width: 100%;
+    }
 }
-
 

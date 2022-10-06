@@ -27,3 +27,19 @@
     bottom: 10px;
     left: 50%;
 }
+@media all and (max-width:760px) {
+    .bt-next, .bt-prev{
+        width:11.67px;
+        height:19.8px;
+    }
+    .bt-prev {
+        position: absolute;
+        top: 49.75%;
+        left: 8.33%;
+    }
+    .bt-next{
+        position: absolute;
+        right: 8.33%;
+        top: 49.75%;
+    }
+}
