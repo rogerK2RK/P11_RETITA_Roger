@@ -6,7 +6,7 @@
     text-align: center;
     justify-content: center;
     color: #fff;
-    padding-top: 4%;
+    padding: 4% 0% 2% 0%;
     margin-top: 43px;
 }
 
@@ -20,4 +20,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    margin-bottom: 0px;
+}
+
+@media all and (max-width:768px) {
+    .text{
+        font-size: 12px;
+    }
+    .foot-section{
+        padding: 15% 0% 2% 0%;
+    }
 }

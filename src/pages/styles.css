@@ -1,0 +1,30 @@
+.boxeErrorPage{
+    color: #FF6060;
+    font-family: "Montserrat";
+    font-style: normal;
+    /* padding: 10% 5% ; */
+}
+
+.errorNumber{
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 142%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.errorMessage{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.link-to-home{
+    display: flex;
+    justify-content: center;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+}

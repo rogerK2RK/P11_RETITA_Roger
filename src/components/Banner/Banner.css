@@ -39,9 +39,23 @@
   right: 13.95%;
 }
 
+
 .content-header-seconde{
   left: 90.65%;
   right: 0%;  
+}
+@media (min-width: 768px) and (max-width: 1373px){
+  .content-header-seconde {
+    left: 84.65%;
+    right: 0%;
+  }
+  .nav-header-fisrt {
+    left: 64.08%;
+    right: 13.95%;
+  }
+  .nav-header {
+    font-size: 16px;
+  }
 }
 
 .txt-deco{
