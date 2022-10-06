@@ -28,3 +28,19 @@
     font-weight: 500;
     font-size: 18px;
 }
+
+/*About Page*/
+.section-about{
+    margin: 0px 100px;
+    display: flex;
+    justify-content: center;
+    height: 223px;
+    /* background: url(../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png); */
+}
+.img-sect{
+    width: 100%;
+    /* background: #000000; */
+    /* mix-blend-mode: darken;
+    opacity: 0.3; */
+    border-radius: 25px;
+}
