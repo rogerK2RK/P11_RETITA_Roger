@@ -33,6 +33,9 @@ function FicheLogement() {
 
         // navigate("/404")
         })
+        .catch((err) => {
+           // affiche un message d'erreur 
+        })
     }, [])
 
     let selectedLogement = logements.find((logement) => logement.id === id );
@@ -69,29 +72,12 @@ function FicheLogement() {
                 </div>
            </div>
            <div className={styles["box-drop"]}>
-                <DropInformation >
+                <DropInformation title="Description">
                     <p>{selectedLogement.description}</p>
                 </DropInformation>
-                <DropInformation >
-                    <p>{selectedLogement.equipments}</p>
+                <DropInformation title="Equipements" >
+                    <ul>{selectedLogement.equipments}</ul>
                 </DropInformation>
-                {/* <div>
-                    <div className={styles["box-titre-col"]}>
-                        <h3 className={styles["titre-col"]}>Description</h3>
-                        <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
-                    </div>
-                    <div className={styles["box-content-col"]}>
-                        <p>{selectedLogement.description}</p>
-                    </div>
-                </div> */}
-                {/* <div>
-                    <div>
-                        <h3 className={styles["titre-col"]}>Équipements</h3>
-                    </div>
-                    <div>
-                        <p>{selectedLogement.equipments}</p>
-                    </div>
-                </div> */}
            </div>
         </div>
     )

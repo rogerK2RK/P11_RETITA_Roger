@@ -2,7 +2,12 @@ import styles from "./style.module.css"
 import React, { useState } from "react"
 import picto from "../../assets/Vector.svg"
 
-function DropInformation({ children }) {
+// const props = {
+//   title: "description",
+//   // children: <div>fdsfsf</div>,
+// }
+function DropInformation({ title, children }) {
+  // const { title, children } = props
   const [isOpen, setIsOpen] = useState(false)
   const dropDescpt = () => {
     setIsOpen(!isOpen)
@@ -12,7 +17,7 @@ function DropInformation({ children }) {
   return (
     <div className={styles["box-drop"]}>
       <button onClick={dropDescpt} className={styles["box-titre-col"]}>
-        <h3 className={styles["titre-col"]}>Description</h3>
+        <h3 className={styles["titre-col"]}>{title}</h3>
         <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
       </button>
       <div
@@ -26,3 +31,21 @@ function DropInformation({ children }) {
 }
 
 export default DropInformation
+
+// const obj = {
+//   id: 35,
+//   price: 499,
+//   color: "blue",
+//   list: [1, 3 ,7],
+//   details: {
+//     firstName: "pierre",
+//     age: 38,
+//   },
+// }
+
+// const {
+//   id,
+//   color: colour,
+//   details: { age },
+//   list:[first]
+// } = obj

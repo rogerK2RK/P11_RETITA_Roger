@@ -27,6 +27,12 @@
         display: block;
         margin-top: 15px;
     }
+    .tytle-logement{
+        font-size: 18px ! important;
+    }
+    .tags{
+        padding: 5px 10px;
+    }
 }
 
 
@@ -45,8 +51,9 @@
     border-radius: 10px;
     font-size: 14px;
     text-align: center;
-    width: 115px;
+    /* width: 115px; */
     margin-right: 10px;
+    padding: 5px 10px;
 }
 .name{
     font-size: 18px;
