@@ -32,9 +32,9 @@
 /*About Page*/
 .section-about{
     margin: 0px 100px;
-    display: flex;
-    justify-content: center;
-    height: 223px;
+    /* display: flex;
+    justify-content: center; */
+    /* height: 223px; */
     /* background: url(../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png); */
 }
 .img-sect{
@@ -43,4 +43,11 @@
     /* mix-blend-mode: darken;
     opacity: 0.3; */
     border-radius: 25px;
+}
+
+.bx-drp-abt{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 108px;
+    color: #ff6060;
 }

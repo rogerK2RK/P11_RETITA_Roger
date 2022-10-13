@@ -72,10 +72,10 @@ function FicheLogement() {
                 </div>
            </div>
            <div className={styles["box-drop"]}>
-                <DropInformation title="Description">
+                <DropInformation className={styles["first-bx-inf"]} title="Description">
                     <p>{selectedLogement.description}</p>
                 </DropInformation>
-                <DropInformation title="Equipements" >
+                <DropInformation className={styles["secd-bx-inf"]} title="Equipements" >
                     <ul>{selectedLogement.equipments}</ul>
                 </DropInformation>
            </div>

@@ -13,7 +13,7 @@ function Banner() {
         <Link to="/" className="nav-header-fisrt txt-deco">
           Accueil
         </Link>
-        <Link to="/error" className="content-header-seconde txt-deco">
+        <Link to="/about" className="content-header-seconde txt-deco">
           A Propos
         </Link>
       </div>
