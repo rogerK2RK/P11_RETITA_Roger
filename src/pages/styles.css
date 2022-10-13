@@ -51,3 +51,20 @@
     margin: 0px 108px;
     color: #ff6060;
 }
+@media all and (max-width:760px) {
+    .bx-drp-abt{
+        margin: 0px 0px;
+    }
+    .section-about {
+        margin: 0px 20px;
+    }
+    .img-sect{
+        height: 223px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    p{
+        font-size: 12px;
+    }
+}

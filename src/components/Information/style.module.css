@@ -12,6 +12,7 @@
 
 .box-titre-col{
     padding: 13px 20px;
+    align-items: center;
     background: #FF6060;
     border-radius: 10px;
     color: #fff;
