@@ -27,7 +27,7 @@ function Stars({ etoile }) {
   }
 
   return (
-    <div>
+    <div className={styles["str-box"]}>
       {orange}
       {gris}
     </div>

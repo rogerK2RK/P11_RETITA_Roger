@@ -66,8 +66,6 @@ function FicheLogement() {
                         <p className={styles["name"]}>{selectedLogement.host.name}</p>
                         <img className={styles["portrait"]} src={selectedLogement.host.picture} alt={selectedLogement.host.name} />
                     </div>
-                    <div id="myDiv"></div>
-                
                     <Stars etoile={Number(selectedLogement.rating)}/>
                 </div>
            </div>

@@ -25,6 +25,7 @@
 @media all and (max-width:768px) {
     .text{
         font-size: 12px;
+        margin-top: 50px;
     }
     .foot-section{
         padding: 15% 0% 2% 0%;

@@ -30,6 +30,7 @@
 .icone-dropdown{
     height: 23px;
     width: 14px;
+    animation: rotation 2s;
 }
 
 .box-content-col{
@@ -46,4 +47,8 @@
 }
 .box-content-col > p, .box-content-col > ul{
     margin: 0px;
+}
+
+.box-titre-col :active > .icone-dropdown{
+    transform: rotate(180deg); 
 }
