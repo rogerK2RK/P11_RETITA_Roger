@@ -18,7 +18,15 @@ function DropInformation({ title, children }) {
     <div className={styles["box-drop"]}>
       <button onClick={dropDescpt} className={styles["box-titre-col"]}>
         <h3 className={styles["titre-col"]}>{title}</h3>
-        <img className={styles["icone-dropdown"]} src={picto} alt="icone" />
+        <img
+          className={styles["icone-dropdown"]}
+          style={{
+            transform: isOpen ? null : "rotate(180deg)",
+            transitionTimingFunction: "ease-in-out",
+          }}
+          src={picto}
+          alt="icone"
+        />
       </button>
       <div
         className={styles["box-content-col"]}

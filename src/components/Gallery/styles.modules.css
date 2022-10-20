@@ -20,6 +20,7 @@
 .box{
     position: relative;
     /* width: 340px; */
+    width: 100%;
     height: 340px;
     flex-grow: 1;
     border-radius: 10px;
@@ -49,7 +50,11 @@
     line-height: 142.6%;
     color: #FFFFFF;
 }
-
+@media all and (max-width:707px) {
+    .cards{
+        margin-right: 0px;
+    }
+}
 
 @media all and (max-width:768px) {
     .gallery{
@@ -70,7 +75,7 @@
     }
     .box{
         position: relative;
-        width: 335px;
+        width: 100%;
         height: 255px;
         border-radius: 10px;
     }

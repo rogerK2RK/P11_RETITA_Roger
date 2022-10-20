@@ -30,7 +30,7 @@ function FicheLogement() {
         getLogement().then((data)=>{
         setLogements(data)
         // si mon id existe alors
-
+        // const monLogement = data.find())
         // navigate("/404")
         })
         .catch((err) => {
@@ -74,7 +74,7 @@ function FicheLogement() {
                     <p>{selectedLogement.description}</p>
                 </DropInformation>
                 <DropInformation className={styles["secd-bx-inf"]} title="Equipements" >
-                    <ul>{selectedLogement.equipments}</ul>
+                    <ul>{selectedLogement.equipments.map(equipement => <li key={equipement}>{equipement}</li>)}</ul>
                 </DropInformation>
            </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.modules.css"
+import styles from "./styles.module.css"
 import stars from "../../assets/Stars.svg"
 import starGris from "../../assets/Star-gris.svg"
 

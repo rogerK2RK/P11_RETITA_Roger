@@ -17,9 +17,12 @@ h1{
   color: #fff;
   /* padding: 5%; */
   /* background: url(https://i0.wp.com/dndduet.com/wp-content/uploads/2020/02/eric-muhr-WfUxLpncYwI-unsplash-scaled.jpg); */
-  left: 25.9%;
+  /* left: 25.9%;
+   */
+   justify-content: center;
   top: 24.32%;
   bottom: 69.04%;
+  width: 100%;
 }
 .img-title{
   position: absolute;
@@ -28,6 +31,13 @@ h1{
   border-radius: 25px;
   object-fit: cover;
 }
+
+@media all and (max-width:998px) {
+  h1{
+    font-size: 35px;
+  }
+}
+
 @media all and (max-width:768px) {
   section{
     margin: 0px 20px 20px 20px;
@@ -36,11 +46,10 @@ h1{
   h1{
     font-size: 24px;
     line-height: 100%;
-    left: 1.6%;
+    justify-content: center;
     top: 14.04%;
     bottom: 80.05%;
-    width: 64%;
+    width: 100%;
     margin-left: 16px;
-    text-align: start;
   }
 }

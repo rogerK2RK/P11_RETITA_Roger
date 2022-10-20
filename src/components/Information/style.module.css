@@ -20,6 +20,7 @@
     display: flex;
     width: 100%;
     border: 0px;
+    position: relative;
     justify-content: space-between;
 }
 
@@ -36,7 +37,7 @@
 .box-content-col{
     display: none;
     position: relative;
-    top: 0%;
+    top: -5%;
     background: #F7F7F7;
     border-radius: 10px;
     padding-top: 15px;
