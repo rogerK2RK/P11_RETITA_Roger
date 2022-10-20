@@ -2,17 +2,11 @@ import styles from "./style.module.css"
 import React, { useState } from "react"
 import picto from "../../assets/Vector.svg"
 
-// const props = {
-//   title: "description",
-//   // children: <div>fdsfsf</div>,
-// }
 function DropInformation({ title, children }) {
-  // const { title, children } = props
   const [isOpen, setIsOpen] = useState(false)
   const dropDescpt = () => {
     setIsOpen(!isOpen)
   }
-  console.log(children)
 
   return (
     <div className={styles["box-drop"]}>
@@ -39,21 +33,3 @@ function DropInformation({ title, children }) {
 }
 
 export default DropInformation
-
-// const obj = {
-//   id: 35,
-//   price: 499,
-//   color: "blue",
-//   list: [1, 3 ,7],
-//   details: {
-//     firstName: "pierre",
-//     age: 38,
-//   },
-// }
-
-// const {
-//   id,
-//   color: colour,
-//   details: { age },
-//   list:[first]
-// } = obj

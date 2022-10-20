@@ -3,8 +3,7 @@ import './styles.css';
 import pict from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png';
 import DropInformation from '../components/Information/index.js';
 
-function AboutPage(props) {
-    console.log(props);
+function AboutPage() {
     return(
         <div className="section-about">
             <img className="img-sect" src={pict} alt="forêt" />

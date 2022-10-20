@@ -4,6 +4,8 @@ import styles from './style.module.css';
 import Slide from '../components/Slide/index.js'
 import Stars from '../components/Stars/index.js'
 import DropInformation from '../components/Information/index.js';
+// import { Redirect } from 'react-router'
+
 
 // import star from '../assets/Stars.svg'
 
@@ -30,8 +32,15 @@ function FicheLogement() {
         getLogement().then((data)=>{
         setLogements(data)
         // si mon id existe alors
-        // const monLogement = data.find())
-        // navigate("/404")
+        const monLogement = data.find((logement) => logement.id === id );
+        // // navigate("/404")
+        // console.log(data);
+        console.log(monLogement);
+        if(!monLogement){
+            console.log("on renvoie a la page d'erreur !! et ca marche aussi");
+            // reurn <Redirect to='*'>;
+        }
+
         })
         .catch((err) => {
            // affiche un message d'erreur 
@@ -39,12 +48,6 @@ function FicheLogement() {
     }, [])
 
     let selectedLogement = logements.find((logement) => logement.id === id );
-
-
-    /*DropDown*/
-    // const dropDown = () =>{
-    //     document.getElementsByClassName("box-content-col")
-    // }
 
     return selectedLogement === undefined ? null : (
         <div className={styles["logement-content"]}>
