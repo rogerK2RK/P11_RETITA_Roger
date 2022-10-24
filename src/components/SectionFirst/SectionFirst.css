@@ -52,4 +52,7 @@ h1{
     width: 100%;
     margin-left: 16px;
   }
+  .img-title{
+    border-radius: 10px;
+  }
 }

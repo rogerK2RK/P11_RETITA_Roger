@@ -41,7 +41,7 @@
     position: absolute;
     left: 5.88%;
     right: 5.88%;
-    top: 78.82%;
+    /* top: 78.82%; */
     bottom: 5.88%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -83,8 +83,8 @@
         position: absolute;
         left: 5.88%;
         right: 5.88%;
-        top: 73.73%;
-        bottom: 5.88%;
+        /* top: 73.73%; */
+        bottom: 0%;
         font-weight: 500;
         font-size: 18px;
         line-height: 142.6%;

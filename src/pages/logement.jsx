@@ -1,54 +1,50 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {useParams/*, useNavigate*/} from 'react-router-dom';
 import styles from './style.module.css';
 import Slide from '../components/Slide/index.js'
 import Stars from '../components/Stars/index.js'
 import DropInformation from '../components/Information/index.js';
-// import { Redirect } from 'react-router'
+import { Navigate } from 'react-router';
 
 
 // import star from '../assets/Stars.svg'
 
 
 
-async function getLogement() {
+// async function getLogement() {
     
-    let response = await fetch('/logements.json');
-    let dataLogement = await response.json();
+//     let response = await fetch('/logements.json');
+//     let dataLogement = await response.json();
     
-    return dataLogement;
+//     return dataLogement;
    
-}
+// }
 
-function FicheLogement() {
+function FicheLogement({logements}) {
 
-    const [logements, setLogements] = useState([])
+    // const [logements, setLogements] = useState([])
     const { id } = useParams()
     
     // const  navigate  = useNavigate()
 
 
-    useEffect(()=>{
-        getLogement().then((data)=>{
-        setLogements(data)
-        // si mon id existe alors
-        const monLogement = data.find((logement) => logement.id === id );
-        // // navigate("/404")
-        // console.log(data);
-        console.log(monLogement);
-        if(!monLogement){
-            console.log("on renvoie a la page d'erreur !! et ca marche aussi");
-            // reurn <Redirect to='*'>;
-        }
+    // useEffect(()=>{
+    //     getLogement().then((data)=>{
+    //     setLogements(data)
+        
 
-        })
-        .catch((err) => {
-           // affiche un message d'erreur 
-        })
-    }, [])
+    //     })
+    //     .catch((err) => {
+    //     })
+    // }, [])
 
     let selectedLogement = logements.find((logement) => logement.id === id );
 
+    if (logements.length === 0) return <div>Chargement...</div> 
+    if(!selectedLogement){
+        console.log("on renvoie a la page d'erreur !! et ca marche aussi");
+        return <Navigate to='/404'/>;
+    }
     return selectedLogement === undefined ? null : (
         <div className={styles["logement-content"]}>
             <div className={styles["box-image-logement"]}>
@@ -72,7 +68,7 @@ function FicheLogement() {
                     <Stars etoile={Number(selectedLogement.rating)}/>
                 </div>
            </div>
-           <div className={styles["box-drop"]}>
+           <div className={styles["box-drop-all"]}>
                 <DropInformation className={styles["first-bx-inf"]} title="Description">
                     <p>{selectedLogement.description}</p>
                 </DropInformation>

@@ -30,8 +30,11 @@ export default function App() {
         <Banner />
         <Routes>
           <Route path="/" element={<Home logements={logements} />} />
-          <Route path="/logement/:id" element={<Logement />} />
-          <Route path="/about" element={<About logements={logements} />} />
+          <Route
+            path="/logement/:id"
+            element={<Logement logements={logements} />}
+          />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Foot />

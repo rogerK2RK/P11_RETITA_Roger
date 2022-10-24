@@ -1,12 +1,13 @@
 
 .box-drop{
-    width: 100%;
+    width: 48%;
     margin-top: 3%;
 }
 
 @media all and (max-width:760px) {
     .box-drop{
         margin-top: 15px;
+        height: 30px;
     }
 }
 
@@ -40,11 +41,12 @@
     top: -5%;
     background: #F7F7F7;
     border-radius: 10px;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 12px;
     padding-bottom: 15px;
     z-index: 1;
+    min-height: 249px;
 }
 .box-content-col > p, .box-content-col > ul{
     margin: 0px;
