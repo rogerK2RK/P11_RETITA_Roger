@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.style_box-drop-all__AY-Ge > .style_box-drop__1vcno{
+  width: 48%;
+}
+.bx-drp-abt > .style_box-drop__1vcno{
+  width: 100%;
+}
+.style_box-drop-all__AY-Ge > .style_box-drop__1vcno > .style_box-content-col__rZZlZ{
+  min-height: 249px;
+}
+.bx-drp-abt > .style_box-drop__1vcno > .style_box-content-col__rZZlZ{
+  min-height: 146px;
+}
+@media all and (max-width:760px) {
+  .style_box-drop-all__AY-Ge > .style_box-drop__1vcno{
+    width: 100%; 
+  }
+  .style_box-drop-all__AY-Ge > .style_box-drop__1vcno > .style_box-content-col__rZZlZ{
+    min-height: 143px;
+  }
+  .bx-drp-abt > .style_box-drop__1vcno > .style_box-content-col__rZZlZ{
+    min-height: 143px;
+  }
+}
+ul{
+  padding: 0%;
+}
+li {
+  list-style-type: none;
+}

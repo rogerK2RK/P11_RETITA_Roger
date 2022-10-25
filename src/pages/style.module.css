@@ -55,6 +55,7 @@
 
 .tytle-logement{
     font-size: 36px;
+    line-height: 142.6%;
 }
 .localisation{
     font-size: 18px;
@@ -104,4 +105,12 @@
 }
 .secd-bx-inf{
     display: contents;
+}
+.loading-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
 }

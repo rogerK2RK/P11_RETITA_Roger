@@ -1,48 +1,19 @@
 import React from 'react';
-import {useParams/*, useNavigate*/} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import styles from './style.module.css';
 import Slide from '../components/Slide/index.js'
 import Stars from '../components/Stars/index.js'
-import DropInformation from '../components/Information/index.js';
+import DropInformation from '../components/Drops/index.js';
 import { Navigate } from 'react-router';
 
-
-// import star from '../assets/Stars.svg'
-
-
-
-// async function getLogement() {
-    
-//     let response = await fetch('/logements.json');
-//     let dataLogement = await response.json();
-    
-//     return dataLogement;
-   
-// }
-
 function FicheLogement({logements}) {
-
-    // const [logements, setLogements] = useState([])
     const { id } = useParams()
-    
-    // const  navigate  = useNavigate()
-
-
-    // useEffect(()=>{
-    //     getLogement().then((data)=>{
-    //     setLogements(data)
-        
-
-    //     })
-    //     .catch((err) => {
-    //     })
-    // }, [])
 
     let selectedLogement = logements.find((logement) => logement.id === id );
 
-    if (logements.length === 0) return <div>Chargement...</div> 
+    if (logements.length === 0) return <div className={styles["loading-box"]}><h3 className={styles["loading-content"]}>Chargement...</h3></div> 
     if(!selectedLogement){
-        console.log("on renvoie a la page d'erreur !! et ca marche aussi");
+        //renvoie a la page d'erreur
         return <Navigate to='/404'/>;
     }
     return selectedLogement === undefined ? null : (

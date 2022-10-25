@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css';
 import pict from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
-import DropInformation from '../components/Information/index.js';
+import DropInformation from '../components/Drops/index.js';
 
 function AboutPage() {
     return(

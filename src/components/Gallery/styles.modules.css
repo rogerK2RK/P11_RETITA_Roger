@@ -68,10 +68,12 @@
     }
     .cards{
         position: relative;
-        width: 335px;
+        width: 100%;
+        /* width: 335px; */
         height: 255px;
         border-radius: 10px;
         margin-bottom: 20px;
+        margin-right: 0px;
     }
     .box{
         position: relative;
