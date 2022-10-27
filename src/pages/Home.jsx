@@ -1,12 +1,14 @@
-import Main from '../components/Main'
+import SectionFirst from '../components/SectionFirst'
 import React from 'react';
+import Gallery from '../components/Gallery/index.js'
 
 function Home(props) {
   
   return (
-    <div className="App">
-      <Main logements={props.logements}/>
-    </div>
+    <div>
+        <SectionFirst/>
+        <Gallery logements={props.logements}/>
+      </div>
   );
 }
 
